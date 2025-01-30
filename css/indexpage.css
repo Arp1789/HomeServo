@@ -33,6 +33,14 @@
             border-radius: 5px;
             margin-right: 10px;
             cursor: pointer;
+            
+        }
+        .login-button:hover{
+            background-color: #fff;
+            color:#3498db;
+            
+        
+             
         }
 
         .register-button {
@@ -42,6 +50,13 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+        }
+        .register-button:hover{
+            background-color: #fff;
+            color:#3498db;
+            
+        
+             
         }
 
         /* Add this CSS rule for hover effect */
@@ -80,12 +95,21 @@
             display: block;
             padding: 10px 20px;
             text-decoration: none;
-            color: #333;
+            color: #000;
         }
 
         .houseowner-dropdown:hover .dropdown-content {
             display: block;
         }
+       .btndrop:hover{
+        background-color: #007BFF;
+        
+        border:none
+        
+       }
+       .btndrop:hover a{
+        color: #fff;
+       }
 
         /* Media Queries for Responsiveness */
         @media (min-width: 768px) {
@@ -149,7 +173,41 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
         }
+        
+@-webkit-keyframes pop-on-hover {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes pop-on-hover {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  .pop-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .pop-on-hover:hover, .pop-on-hover:focus, .pop-on-hover:active {
+    -webkit-animation-name: pop-on-hover;
+    animation-name: pop-on-hover;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+        
+       
         /* Our Happy Customers Styles */
         .testimonials-container {
     background-color: #f7f7f7;

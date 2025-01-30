@@ -91,7 +91,7 @@ fetch(`http://localhost:8080/vendors/login?email=${email}&password=${password}`,
          localStorage.setItem("pin-code",obj.data.address.pinCode)
           
           if(obj.data!=null){
-            window.location.href="http://127.0.0.1:5501/VendorHomePage.html"
+            window.location.href="http://127.0.0.1:5500/HomeServo%203/VendorHomePage.html"
           }
 
         })

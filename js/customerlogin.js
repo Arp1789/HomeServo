@@ -85,7 +85,7 @@ form.onsubmit = (e)=>{
            localStorage.setItem("pin-code",obj.data.address.pinCode)
             console.log(obj);
             if(obj.data!=null){
-              window.location.href="http://127.0.0.1:5501/hamburgurCustomerPage.html"
+              window.location.href="http://127.0.0.1:5502/hamburgurCustomerPage.html"
             }
           })
           .catch(error => {

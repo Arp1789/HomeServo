@@ -35,24 +35,24 @@ form.addEventListener('submit', e => {
 
     checkInputs();
 
-    // console.log(name.value);
-    // console.log(phone.value);
-    // console.log(email.value);
-    // console.log(password.value);
+    console.log(name.value);
+    console.log(phone.value);
+    console.log(email.value);
+    console.log(password.value);
     
-    // console.log(costperday.value);
-    // console.log(DoorNumber.value);
-    // console.log(Landmark.value);
-    // console.log(Street.value);
-    // console.log(District.value);
-    // console.log(State.value);
-    // console.log(pincode.value);
+    console.log(costperday.value);
+    console.log(DoorNumber.value);
+    console.log(Landmark.value);
+    console.log(Street.value);
+    console.log(District.value);
+    console.log(State.value);
+    console.log(pincode.value);
 
     var obj={
         name:name.value,
         email:email.value,
         phone:phone.value,
-        pwd:password.value,
+        password:password.value,
         costPerDay:costperday.value,
         role:role.value,
         address:{
@@ -65,7 +65,7 @@ form.addEventListener('submit', e => {
         }
         
      }
-     fetch('http://localhost:8080/vendor', {
+     fetch('http://localhost:8080/vendors', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -77,7 +77,7 @@ form.addEventListener('submit', e => {
           
           console.log(obj);
           if(obj.status===201){
-            window.location.href="http://127.0.0.1:5501/CustomerLogin.html"
+            window.location.href="http://127.0.0.1:5500/HomeServo%203/VendorLogin.html"
           }
         })
         .catch(error => {
@@ -128,8 +128,8 @@ function checkInputs() {
 
     if (passwordValue === '') {
         setErrorFor(password, 'Please enter password');
-    } else if (!isPassword(passwordValue)) {
-        setErrorFor(password, 'atleast one number, one uppercase, lowercase lette, and atleast 8 character');
+    // } else if (!isPassword(passwordValue)) {
+        // setErrorFor(password, 'atleast one number, one uppercase, lowercase lette, and atleast 8 character');
     }else {
         setSuccessFor(password);
     }

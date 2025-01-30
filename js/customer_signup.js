@@ -28,17 +28,17 @@ form.addEventListener('submit', e => {
 
 
     checkInputs();
-    // console.log(name.value);
-    // console.log(phone.value);
-    // console.log(email.value);
-    // console.log(password.value);
+    console.log(name.value);
+    console.log(phone.value);
+    console.log(email.value);
+    console.log(password.value);
 
-    // console.log(DoorNumber.value);
-    // console.log(Landmark.value);
-    // console.log(Street.value);
-    // console.log(District.value);
-    // console.log(State.value);
-    // console.log(pincode.value);
+    console.log(DoorNumber.value);
+    console.log(Landmark.value);
+    console.log(Street.value);
+    console.log(District.value);
+    console.log(State.value);
+    console.log(pincode.value);
 
     var obj={
         name:name.value,
@@ -69,12 +69,12 @@ form.addEventListener('submit', e => {
           
           console.log(obj);
           if(obj.status===201){
-            window.location.href="http://127.0.0.1:5501/CustomerLogin.html#"
+            window.location.href="http://127.0.0.1:5500/HomeServo%203/CustomerLogin.html"
           }
         })
         .catch(error => {
         
-          console.error("error")
+          console.error("error");
         });
 }
 
